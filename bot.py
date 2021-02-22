@@ -26,16 +26,16 @@ try:
     email = wait.until(
         EC.presence_of_element_located((By.ID, "i0116"))
     )
-    email.send_keys("slz5121@psu.edu")
+    email.send_keys("")
     email.send_keys(Keys.RETURN)
 
     psuUser = wait1.until(
         EC.presence_of_element_located((By.ID, "login"))
     )
-    psuUser.send_keys("slz5121")
+    psuUser.send_keys("")
 
     psuPass = driver.find_element_by_id("password")
-    psuPass.send_keys("Headsh0t!!")
+    psuPass.send_keys("")
     psuPass.send_keys(Keys.ENTER)
 
     finalSignUp = wait.until(
